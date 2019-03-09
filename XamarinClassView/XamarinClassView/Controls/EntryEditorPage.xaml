@@ -1,26 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinClassView.Controls.EntryEditorPage">
     <ContentPage.Content>
         <StackLayout>
-            <Entry 
+            <Entry
                 x:Name="TxtAge"
                 Text=""
                 TextColor="Red"
                 Placeholder="Year of Birth"
                 PlaceholderColor="Blue"
                 IsPassword="False"
-                              
+
                 Keyboard="Numeric"
 
-                BackgroundColor="#EEE"/>
+                BackgroundColor="#EEE" />
 
-            <Label x:Name="LblDup"/>
+            <Label x:Name="LblDup" />
 
-            <Editor x:Name="TxtComment" HeightRequest="200"/>
+            <Editor x:Name="TxtComment" HeightRequest="200" />
 
-            <Label x:Name="LblCharQuant"/>
+            <Label x:Name="LblCharQuant" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

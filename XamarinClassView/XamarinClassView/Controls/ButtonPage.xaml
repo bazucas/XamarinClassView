@@ -1,14 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinClassView.Controls.ButtonPage">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="1Button" TextColor="Blue" FontSize="24" BorderColor="Red" CornerRadius="20" BorderWidth="5" BackgroundColor="White"/>
-            <Button BackgroundColor="Transparent" Text="2Button"/>
+            <Button Text="1Button" TextColor="Blue" FontSize="24" BorderColor="Red" CornerRadius="20" BorderWidth="5"
+                    BackgroundColor="White" />
+            <Button BackgroundColor="Transparent" Text="2Button" />
             <Button Image="ButtonRed.png" HeightRequest="100" HorizontalOptions="Start" />
-            <Button Image="ButtonGreen.png" HeightRequest="100" HorizontalOptions="Start"/>
-            <Button Image="https://pt.seaicons.com/wp-content/uploads/2017/02/Button-Add-icon.png" HeightRequest="100" HorizontalOptions="Start"/>
+            <Button Image="ButtonGreen.png" HeightRequest="100" HorizontalOptions="Start" />
+            <Button Image="https://pt.seaicons.com/wp-content/uploads/2017/02/Button-Add-icon.png" HeightRequest="100"
+                    HorizontalOptions="Start" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

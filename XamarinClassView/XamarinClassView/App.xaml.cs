@@ -1,6 +1,5 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
+using XamarinClassView.Menu;
 
 namespace XamarinClassView
 {
@@ -10,7 +9,7 @@ namespace XamarinClassView
         {
             InitializeComponent();
 
-            MainPage = new Menu.Master();
+            MainPage = new Master();
         }
 
         protected override void OnStart()

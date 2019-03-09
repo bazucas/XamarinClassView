@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClassView.Controls.WebViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="SiteUrl"/>
+                <Button Text="Ok" Clicked="GoToPage"/>
+                <Button Text="Next" Clicked="GoNext"/>
+                <Button Text="Back" Clicked="GoBack"/>
+
+
+            </StackLayout>
+            <WebView 
+                x:Name="Browser"
+                Source="https://www.google.com"
+                Navigated="WebView_OnNavigated"
+                Navigating="WebView_OnNavigating"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand">
+
+            </WebView>
+            <Label x:Name="LblStatus"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

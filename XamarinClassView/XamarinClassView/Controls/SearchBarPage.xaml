@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClassView.Controls.SearchBarPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar
+                TextChanged="SearchBar_OnTextChanged"
+                CancelButtonColor="Red"
+                FontSize="24"
+                FontAttributes="Italic"
+                HorizontalTextAlignment="Center"
+                Placeholder="Insert company"
+                PlaceholderColor="Black"
+                Text=""
+                TextColor="Aqua"
+                SearchButtonPressed="SearchBar_OnSearchButtonPressed" />
+            <StackLayout x:Name="ResultList" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

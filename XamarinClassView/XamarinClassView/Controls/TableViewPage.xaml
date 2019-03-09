@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClassView.Controls.TableViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Backup">
+                        <SwitchCell Text="Images backup" On="False"/>
+                        <SwitchCell Text="Chat backup" On="False"/>
+                        <SwitchCell Text="Files backup" On="False"/>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="Week days backup"/>
+                                <Slider HorizontalOptions="FillAndExpand" Minimum="0" Maximum="7" Value="20"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="Hourly backup"/>
+                                <Stepper Minimum="0" Maximum="7" Increment="1" Value="1"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Security">
+                        <SwitchCell Text="Crypto pass" On="True"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
